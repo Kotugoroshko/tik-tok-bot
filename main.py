@@ -72,7 +72,7 @@ class TikTokBot:
                     self.driver.switch_to.frame(iframe)
                     time.sleep(5)
 
-                    if self.xpath_exists("//div[contains(text(), 'VK')]"):
+                    if self.xpath_exists("//div[contains(text(), 'Google')]"):
                         self.driver.find_element_by_xpath("//div[contains(text(), 'Google')]").click()
                         time.sleep(5)
                     elif self.xpath_exists("//div[contains(text(), 'Continue with Google')]"):
