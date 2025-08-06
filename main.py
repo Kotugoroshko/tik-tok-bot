@@ -73,10 +73,10 @@ class TikTokBot:
                     time.sleep(5)
 
                     if self.xpath_exists("//div[contains(text(), 'VK')]"):
-                        self.driver.find_element_by_xpath("//div[contains(text(), 'VK')]").click()
+                        self.driver.find_element_by_xpath("//div[contains(text(), 'Google')]").click()
                         time.sleep(5)
-                    elif self.xpath_exists("//div[contains(text(), 'Log in with VK')]"):
-                        self.driver.find_element_by_xpath("//div[contains(text(), 'Log in with VK')]").click()
+                    elif self.xpath_exists("//div[contains(text(), 'Continue with Google')]"):
+                        self.driver.find_element_by_xpath("//div[contains(text(), Continue with Google')]").click()
                         time.sleep(5)
 
                     self.driver.switch_to.window(self.driver.window_handles[1])
